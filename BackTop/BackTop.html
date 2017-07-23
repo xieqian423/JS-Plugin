@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body{width:100%;height:100%;margin:0;padding:0;}
+        .page1,.page2{height:100%;}
+        .page1{background:antiquewhite}
+        .page2{background:cadetblue}
+
+        .btn-backtop{
+            display:none;
+            width:36px;height:36px;
+            background:#ccc;
+            position:fixed;
+            right:50px;bottom:50px;
+        }
+        .arrow{
+            border:12px solid transparent;
+            width:0;
+            height:0;
+            margin: -6px auto;
+            border-bottom-color: burlywood;
+        }
+        .arrow:after{
+            content: '';
+            display:block;
+            width:8px;
+            height:10px;
+            background-color: burlywood;
+            margin-top:12px;
+            margin-left: -4px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="page page1">
+    </div>
+    <div class="page page2"></div>
+    <a class="btn-backtop">
+        <div class="arrow"></div>
+    </a>
+    <script src="BackTop.js"></script>
+</body>
+</html>
